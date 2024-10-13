@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 0 20px; /* Padding for aesthetics */
+    z-index: 1000; /* Ensure the nav is above other content */
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem;
+    transition: color 0.3s; /* Transition effect for hover */
+}
+
+.navlist li a:hover {
+    color: #3877FF; /* Change color on hover */
+    background-color: #fff ;
+    border-radius: 5px;
+}
+
+.left-container,
+.right-container {
+    height: 100vh;
+    padding: 20px; /* Padding for inner content */
+    color: #fff; /* Text color for readability */
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    background: #262525; /* Dark background for the left container */
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    background: linear-gradient(-45deg, #3877FF, #262525 70%);
+    width: 30%;
+}
+
+.content{
+    margin-left: 4rem;
+}
+.content h1{
+    font-size: 3rem;
+    color: #5DB9EE;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content .intro span{
+    color: #5DB9EE;
+}
+.content .detail {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 35rem;
+    margin: 1.1rem 0 0 0;
+    line-height: 1.8rem;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%,#262525 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url(image/hashar.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   border: 1rem solid white;
+    box-shadow: 
+    0 0 1rem #fff, 
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877FF,
+    inset 0 0 2rem #3877FF,
+    0 0 4rem #3877FF,
+    inset 0 0 4rem #3877FF
+    ;
+}
+.back{
+    background: #696464;
+    width: 100%;
+    height: 100vh;
+    
+}
+.back h1{
+    font-size: 3rem;
+    display: flex;
+   justify-content: left;
+   color: #88adfc;
+   margin: 0 0 0 1.1rem;
+}
+.back p{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 0 1.1rem;
+    line-height: 1.8rem;
+}
+.back li{
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1rem 0 0 2rem;
+    line-height: 1.8rem;
+}
+.projects{
+    background: #696464;
+    width: 100%;
+    height: 100vh;
+}
+.projects h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: left;
+    color: #88adfc;
+    margin: 0 0 0 1.1rem;
+}
+.projects li{
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1rem 0 0 2rem;
+    line-height: 1.8rem;
+    max-width: 38rem;
+}
+.projects span{
+    background-color: black;
+}
+.skills {
+    background: #696464;
+    width: 100%;
+    height: 100vh;
+}
+.skills h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: left;
+    color: #88adfc; 
+    margin: 0 0 0 1.1rem;
+}
+.skills li{
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1rem 0 0 2rem;
+    line-height: 1.8rem;
+    max-width: 38rem;
+}
+.skills span{
+    background-color: black;
+}
+.experience {
+    background:  #696464;
+    width: 100%;
+    height: 100vh;
+}
+.experience h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: left;
+    color: #88adfc; 
+    margin: 0 0 0 1.1rem;
+}
+.experience h2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: left;
+    color: #88adfc; 
+    margin: 0 0 0 1.1rem;
+}
+.experience h4{ 
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: left;
+    color: #88adfc; 
+    margin: 0 0 0 1.1rem
+}
+.experience p{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 0 1.1rem;
+    line-height: 1.8rem;
+}
+.achievements{
+    background:  #696464;
+    width: 100%;
+    height: 100vh;
+}
+.achievements h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: left;
+    color: #88adfc; 
+    margin: 0 0 0 1.1rem;
+}
+.achievements p{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 0 1.1rem;
+    line-height: 1.8rem;
+}  
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#bbb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #696464;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Container for contact info */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Contact Info Box Styling */
+.contactinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contactinfo .box {
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.contactinfo .box:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Centering the icon and text horizontally */
+.box .icon,
+.box .text {
+    display: inline-block;
+    text-align: center;
+}
+
+.text h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.text p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactinfo {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
